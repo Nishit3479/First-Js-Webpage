@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+Welcome Page
+</title>
+
+<script type="text/javascript">
+
+function displayInput()
+{
+	var testInput = document.getElementById("name").value;
+	if(testInput.length == 0)
+	{
+		document.getElementById("para").innerHTML = "Hey, you didn't type anything!";
+	}
+	else
+	{
+		document.getElementById("para").innerHTML = "Hello Mr/Ms. "+testInput+", Hope you like this page.";
+	}
+} 
+ 
+</script>
+
+</head>
+
+<body onload="alert('Nice to Meet You!');">
+
+<H1 style="color:blue;">
+Welcome!!
+</H1>
+
+<HR>
+
+<p style="color:blue;">
+Please Enter your Name...
+</p>
+
+<input id="name" type="text"/>
+
+<button onclick="displayInput();">
+Enter
+</button>
+
+<p id="para" style="color:blue;">
+</p>
+
+</body>
+
+</html>
